@@ -1,11 +1,16 @@
 // promise based
-const asyncHandler = (requestHandler) => {
-  (req, res, next) => {
-    Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err));
-  };
-};
+const asyncHandler = (fn) => (req, res, next) =>
+  Promise.resolve(fn(req, res, next)).catch(next);
 
-export { asyncHandler };
+export default asyncHandler;
+
+// const asyncHandler = (requestHandler) => {
+//   return (req, res, next) => {
+//     Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err));
+//   };
+// };
+
+// export { asyncHandler };
 
 // const asyncHandler =()=>{}
 // const asyncHandler =(func)=>{()=>{}} can be
@@ -21,3 +26,14 @@ export { asyncHandler };
 //       .json({ success: false, message: error.message });
 //   }
 // };
+
+
+// // Sample route using asyncHandler
+// app.get("/user/:id", asyncHandler(async (req, res) => {
+//   const user = await User.findById(req.params.id);
+//   if (!user) {
+//     res.status(404).json({ message: "User not found" });
+//     return;
+//   }
+//   res.json(user);
+// }));
