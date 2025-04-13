@@ -27,7 +27,6 @@ export default asyncHandler;
 //   }
 // };
 
-
 // // Sample route using asyncHandler
 // app.get("/user/:id", asyncHandler(async (req, res) => {
 //   const user = await User.findById(req.params.id);
