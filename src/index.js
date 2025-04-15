@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 // dotenv.config({ path: "./.env" }); // ✅ Load FIRST
+import "./logger.js";
 
 import connectDB from "./db/index.js";
 import { app } from "./app.js";

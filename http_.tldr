@@ -75,9 +75,9 @@
 		{
 			"id": "pointer:pointer",
 			"typeName": "pointer",
-			"x": 663.0923149897664,
-			"y": 1161.3906229722572,
-			"lastActivityTimestamp": 1744477155157,
+			"x": 1423.7872559786247,
+			"y": 1439.579938848054,
+			"lastActivityTimestamp": 1744686317230,
 			"meta": {}
 		},
 		{
@@ -144,20 +144,71 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -35.3481535247538,
-			"y": -567.5347173108669,
-			"z": 0.8103378839894362,
+			"x": 349.46111691857647,
+			"y": -962.679045138485,
+			"z": 0.5398079116309186,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
 		},
 		{
-			"editingShapeId": "shape:CYIj01W0yiNKdVbkbGFro",
+			"x": 386.0917764965526,
+			"y": 1430.0153859298528,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:pTnj5Po71aYIkqluABNs6",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 865.0103759765625,
+				"font": "mono",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "$2b$10$.3f6kO6cRHXxF0lj61tBsuaJrw07OSfEDqiI655ESIryKhcdmq2Py"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "$2b$10$QhshlPKkpPZyKNDcIw9TYe.ruMLPUuphSdrWGPaFMuaD6jeLqjlDe"
+								}
+							]
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "aD1aq",
+			"typeName": "shape"
+		},
+		{
+			"editingShapeId": "shape:pTnj5Po71aYIkqluABNs6",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:CYIj01W0yiNKdVbkbGFro"
+				"shape:pTnj5Po71aYIkqluABNs6"
 			],
-			"hoveredShapeId": "shape:CYIj01W0yiNKdVbkbGFro",
+			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -538,8 +589,6 @@
 			"followingUserId": null,
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
-				"tldraw:color": "orange",
-				"tldraw:size": "m",
 				"tldraw:font": "mono"
 			},
 			"brush": null,
@@ -555,8 +604,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 1323.333251953125,
-				"h": 625.8333129882812
+				"w": 1273.333251953125,
+				"h": 520
 			},
 			"insets": [
 				false,
