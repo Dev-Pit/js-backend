@@ -80,10 +80,7 @@ const registerUser = asyncHandler(async (req, res) => {
       console.error("File processing error:", error);
       throw new ApiError(400, "Error while processing file upload!");
     }
-  }
-  // if (!avatar) {
-  //   throw new ApiError(400, "Avatar file is required");
-  // }
+  } 
 
   const user = await User.create({
     fullName,

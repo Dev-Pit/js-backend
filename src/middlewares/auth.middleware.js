@@ -26,7 +26,6 @@ export const verifyJWT = asyncHandler(async (req, _, next) => {
     // TODO discuss about frontend
     if (!user) {
       console.log(`\n 🔐 user not found on DB according to token.`);
-
       throw new ApiError(401, "Invalid Access Token");
     }
 
