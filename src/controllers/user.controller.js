@@ -80,7 +80,7 @@ const registerUser = asyncHandler(async (req, res) => {
       console.error("File processing error:", error);
       throw new ApiError(400, "Error while processing file upload!");
     }
-  } 
+  }
 
   const user = await User.create({
     fullName,
@@ -151,8 +151,8 @@ const logoutUser = asyncHandler(async (req, res) => {
   const logoutUser = await User.findByIdAndUpdate(
     req.user._id,
     {
-      $set: {
-        refreshToken: "",
+      $unset: {
+        refreshToken: 1,
       },
     },
     {
@@ -361,7 +361,7 @@ const getWatchHistory = asyncHandler(async (req, res) => {
   const user = await User.aggregate([
     {
       $match: {
-        _id: new mongoose.Types.ObjectId.createFromHexString(req.uesr._id),
+        _id: new mongoose.Types.ObjectId(req.user._id),
       },
     },
     {
